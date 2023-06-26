@@ -8,3 +8,13 @@ def nb_dig(n, d):
     return count
 
 print(nb_dig(25, 1))
+
+
+def inputer():
+    var = input("entrer un nombre : ")
+    if(var is int) : print('la valeur entré est : ', var)
+    if(var is not int) : 
+        print('la valeur entré n\'est pas un nombre. ')
+        input('saisissez plutôt un nombre : ')
+    return var
+print(inputer())
