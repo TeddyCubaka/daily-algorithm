@@ -1,0 +1,15 @@
+def typist(str):
+    list = [*str]
+    count = 0
+    for index, i in enumerate(str) :
+        count = count + 1
+        if i.isupper() : 
+            count = count + 1
+            j = str[index + 1] if index < len(str) -1 else None
+            if j is not None and j.islower() : 
+                # j = str[index + 1]
+                # if j.islower() : count = count + 1
+                count = count + 1
+    return count
+
+print(typist("Aa"))

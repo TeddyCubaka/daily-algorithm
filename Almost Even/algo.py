@@ -14,6 +14,3 @@ def split_integer(number, spliter) :
     return list
 
 print(split_integer(20, 6))
-
-# test = [1, 2,3,4,5]
-# print(test[-2])

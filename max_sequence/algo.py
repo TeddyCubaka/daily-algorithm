@@ -1,9 +1,10 @@
 def max_sequence(arr):
     seq = []
-    if(arr == []) : return 0
-    if(max(arr) < 0) : return 0
+    if(arr == []) or (max(arr) < 0) : return 0
     for i in range(len(arr)) : [seq.append(arr[i:i + l + 1]) for l in range(len(arr[i:]))]
     return max(sum(count) for count in seq)   
+
+print(max_sequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
 
 # [-2, 1, -3, 4, -1, 2, 1, -5, 4] must be 6
 

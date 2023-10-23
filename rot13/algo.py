@@ -12,4 +12,4 @@ def rot13(str):
     return string
 
 
-print(rot13("test"))
+print(rot13("teddy"))
